@@ -36,6 +36,33 @@
         border-top: 5px solid $color;
     }
     @else {
-        @error "unknown #{$direction}";
+        @error "unknown direction #{$direction}";
     }
 }
+
+$font-sizing: (
+    xs: 10px,
+    s: 15px,
+    m: 25px,
+    l: 35px,
+    xl: 50px,
+    xxl: 70px,
+
+);
+
+@mixin font-size($size) {
+    @if map-has-key($font-sizing, $size) {
+      font-size: map-get($font-sizing, $size);
+    } @else {
+      @error "#{$size} this is not defined, Use #{font-sizing}";
+    }
+  }
+  // functions in sass
+  @function font-size($size) {
+    @if map-has-key($font-sizing, $size) {
+      @return map-get($font-sizing, $size);
+    } @else {
+      @error "#{$size} this is not defined, Use #{font-sizing}";
+    }
+  }
+  
