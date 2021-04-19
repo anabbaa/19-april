@@ -1,0 +1,17 @@
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin size {
+    width: 4rem;
+    height: 4rem;
+    
+}
+@mixin fade-in($time) {
+    animation-name: fade-in;
+    animation-duration: #{$time};
+    animation-iteration-count: infinite;
+    
+}
