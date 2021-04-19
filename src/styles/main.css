@@ -18,5 +18,24 @@
     transform: scale(1) rotate(90deg);
   }
 }
+.triangle::after, .triangle::before {
+  display: block;
+  content: "";
+  margin: 10px;
+}
+.triangle::before {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid red;
+}
+.triangle::after {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid yellow;
+}
 
 /*# sourceMappingURL=main.css.map */

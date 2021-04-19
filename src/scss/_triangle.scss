@@ -1,0 +1,15 @@
+.triangle{
+    &::after,
+    &::before{
+        display: block;
+        content: "";
+        margin: 10px;
+    }
+ &::before{
+@include triangle (right, red);
+    } 
+    &::after{
+        @include triangle (left, yellow);
+    }
+
+}
