@@ -38,4 +38,28 @@
   border-right: 5px solid yellow;
 }
 
+.text-xs {
+  font-size: 10px;
+}
+
+.text-s {
+  font-size: 15px;
+}
+
+.text-m {
+  font-size: 25px;
+}
+
+.text-l {
+  font-size: 35px;
+}
+
+.text-xl {
+  font-size: 50px;
+}
+
+.text-xxl {
+  font-size: 70px;
+}
+
 /*# sourceMappingURL=main.css.map */
